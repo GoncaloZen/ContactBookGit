@@ -71,8 +71,8 @@ public class ContactBook {
     }
 
     public boolean haveSamePhone() {
-        initializeIterator();
         for (int i = 0; i < counter; i++) {
+            currentContact = i+1;
             Contact contact = contacts[i];
             while(hasNext()) {
                 Contact auxContact = next();
